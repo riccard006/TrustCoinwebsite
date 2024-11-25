@@ -1,72 +1,80 @@
-/* Stile generale della pagina */
+/* Reset Styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-/* Header con immagine di sfondo */
-header {
-  background: url('https://raw.githubusercontent.com/riccard006/TrustCoinwebsite/refs/heads/main/DALL%C2%B7E%202024-11-25%2019.34.22%20-%20A%20shiny%20gold%20coin%20with%20the%20text%20%27TrustCoin%27%20engraved%20on%20it%2C%20surrounded%20by%20a%20glowing%20blue%20aura%2C%20symbolizing%20trust%20and%20transparency.%20The%20coin%20features%20a.webp') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  border-bottom: 5px solid #388e3c;
-  background-size: contain;  /* Mantieni la dimensione dell'immagine proporzionale */
+/* Hero Section */
+.hero {
+    background: url('https://raw.githubusercontent.com/riccard006/TrustCoinwebsite/refs/heads/main/DALL%C2%B7E%202024-11-25%2019.34.22%20-%20A%20shiny%20gold%20coin%20with%20the%20text%20%27TrustCoin%27%20engraved%20on%20it%2C%20surrounded%20by%20a%20glowing%20blue%20aura%2C%20symbolizing%20trust%20and%20transparency.%20The%20coin%20features%20a.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-header img {
-  width: 100px;
-  margin-bottom: 20px;
+.hero .logo {
+    width: 100px;
+    margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 10px 0;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.hero .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-/* Stile per il pulsante */
-.btn {
-  padding: 10px 20px;
-  background-color: #388e3c;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
+.hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #388e3c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #2c6f28;
+.hero .btn:hover {
+    background-color: #2c6f28;
 }
 
-/* Sezione principale */
-section {
-  padding: 50px 20px;
-  text-align: center;
+/* About Section */
+.about, .buy {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
 }
 
-/* Sezione di acquisto */
-#buy {
-  padding: 50px 20px;
-  background-color: #388e3c;
-  color: white;
-  text-align: center;
+.about h2, .buy h2 {
+    font-size: 2.5rem;
+    color: #388e3c;
 }
 
-#buy h2 {
-  font-size: 2rem;
+.about p, .buy p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
 }
 
-#buy p {
-  font-size: 1.2rem;
-  margin: 20px 0;
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
