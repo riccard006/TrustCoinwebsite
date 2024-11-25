@@ -1,0 +1,109 @@
+/* Stile Generale */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header .btn {
+  background: white;
+  color: #4caf50;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header .btn:hover {
+  background: #81c784;
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Sezione About */
+#about {
+  background: #f9f9f9;
+  padding: 40px 20px;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about li {
+  background: #4caf50;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Sezione Buy */
+#buy {
+  background: #e8f5e9;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#buy h2 {
+  margin-bottom: 20px;
+}
+
+#buy .btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#buy .btn:hover {
+  background: #388e3c;
+}
+
+/* Footer */
+footer {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
