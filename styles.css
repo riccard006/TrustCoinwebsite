@@ -1,97 +1,119 @@
-/* Stile Generale */
-body {
-  font-family: Arial, sans-serif;
+/* Impostazioni generali */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  color: #333;
+  box-sizing: border-box;
 }
 
-/* Header */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header con immagine di sfondo */
 header {
-  background: linear-gradient(to right, #4caf50, #81c784);
+  background: url('A_shiny_gold_coin_with_the_text_TrustCoin_engrav.png') no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  border-bottom: 5px solid #388e3c;
+  background-size: contain;  /* Mantieni la dimensione dell'immagine proporzionale */
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 header .btn {
   background: white;
   color: #4caf50;
-  padding: 10px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 header .btn:hover {
-  background: #81c784;
+  background: #388e3c;
   color: white;
+  transform: scale(1.1);
 }
 
-/* Container */
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* Sezione About */
+/* Sezione Chi Siamo */
 #about {
+  padding: 60px 20px;
   background: #f9f9f9;
-  padding: 40px 20px;
 }
 
 #about h2 {
   text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+#about p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 #about ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 #about li {
   background: #4caf50;
   color: white;
   margin: 10px 0;
-  padding: 10px;
+  padding: 12px 20px;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
-/* Sezione Buy */
+/* Sezione Acquista */
 #buy {
   background: #e8f5e9;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  border-top: 5px solid #388e3c;
 }
 
 #buy h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#buy p {
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 #buy .btn {
   background: #4caf50;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 #buy .btn:hover {
   background: #388e3c;
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -99,11 +121,11 @@ footer {
   background: #4caf50;
   color: white;
   text-align: center;
-  padding: 10px 20px;
-  margin-top: 20px;
+  padding: 20px;
+  font-size: 1rem;
 }
 
 footer a {
-  color: #f9f9f9;
+  color: #fff;
   text-decoration: underline;
 }
